@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```bash
 alembic init -t async alembic
 alembic revision --autogenerate -m "Initial tables"
-alembic upgrade hea
+alembic upgrade head
 
 ```
 
