@@ -27,12 +27,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Setup database tables with Alembic
+### Setup database tables
 ```bash
-alembic init -t async alembic
-alembic revision --autogenerate -m "Initial tables"
 alembic upgrade head
-
 ```
 
 ### Start the app
