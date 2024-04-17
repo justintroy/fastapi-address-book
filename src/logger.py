@@ -29,7 +29,8 @@ async def logging_middleware(request: Request, call_next):
 
     body = await request.body()
     if body:
-        log += ", Body: " + json.dumps(body)
+        json_body = await request.json()
+        log += ", Body: " + json.dumps(json_body)
     
     logger.info(log)
 
