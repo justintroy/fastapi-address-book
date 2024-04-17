@@ -11,7 +11,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 
 from src.config import config
 
-engine = create_async_engine(config.DATABASE_URL, pool_pre_ping=True, echo=True)
+engine = create_async_engine(config.DATABASE_URL, pool_pre_ping=True)
 metadata = MetaData()
 
 # DB operations helper async functions
