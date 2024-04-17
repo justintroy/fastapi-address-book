@@ -9,7 +9,7 @@ from src.config import config
 def create_access_token():
     payload = {
         "exp": datetime.utcnow()
-        + timedelta(minutes=1)
+        + timedelta(minutes=5)
         # we can add more data i.e. user_id, login_time, etc
     }
 
